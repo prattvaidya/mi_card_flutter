@@ -2,11 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    MyApp()
+  );
+}
+
+// shortcut - stless
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.red,
         body: Container(),
       ),
-    ),
-  );
+    );
+  }
 }
